@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 
 namespace WebApi.Controllers {
 	public class ValuesController : ApiController {
-		private JObject CreateData( string Key1, string Key2, int? Key3 ) {
+		private JObject CreateData( string Key1, double? Key2, int? Key3 ) {
 			JObject obj = new JObject();
 			obj["Key1"] = Key1;
 			obj["Key2"] = Key2;
@@ -15,9 +15,9 @@ namespace WebApi.Controllers {
 		[HttpGet]
 		public JArray Get() {
 			JArray output = new JArray();
-			output.Add( CreateData( "Key One", "Key Two", 3 ) );
-			output.Add( CreateData( "Key Four", "Key Five", 6 ) );
-			output.Add( CreateData( "Key Seven", "Key Eight", 9 ) );
+			output.Add( CreateData( "Key One", 2.0, 3 ) );
+			output.Add( CreateData( "Key Four", 5.0, 6 ) );
+			output.Add( CreateData( "Key Seven", 8.0, 9 ) );
 			output.Add( CreateData( "Key Ten", null, null ) );
 			return output;
 		}
