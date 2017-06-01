@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4DE02369-74D0-4ACD-9F95-B0AF35C5B393}"
 	ProjectSection(SolutionItems) = preProject
 		database.sql = database.sql
+		TypeProviders.pptx = TypeProviders.pptx
 	EndProjectSection
 EndProject
 Global
